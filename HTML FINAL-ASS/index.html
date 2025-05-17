@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="top">Mega Mart</h1>
+    <h3>Yuor Complete Shopping Desgination</h3>
+    <ul>
+        <li>Home</li>
+        <li>Electronics</li>
+        <li>Fashion</li>
+        <li>Books</li>
+        <li>Cart</li>
+        <li>Contact</li>
+    </ul>
+    <h3>Product Search</h3>
+    <input type="search" value="Search">
+    <input type="button" value="Search">
+    <h3>Featured Product</h3>
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td><b>Wireless Headphones</b>
+                <img src="headphone.webp" alt="" width="150" height="150">
+            </td>
+            <td>
+                Premium noise-canceling Bluetooth headphones
+                <ul>
+                    <li>40mm drivers</li>
+                    <li>30-hour battery</li>
+                    <li>IPX4 waterproof</li>
+                </ul>
+            </td>
+            <td>
+                <s>$499.99</s><br>
+                <b>$149.99</b>
+            </td>
+            <td>In Stock</td>
+            <td>
+                <button>Add to Cart</button><br>
+                Available quantities: 15
+            </td>
+        </tr>
+        <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td><b>Smart Watch Pro</b>
+                <img src="images.jpeg" alt="" height="150" width="150">
+            </td>
+            <td>
+                Advanced fitness tracking smartwatch:
+                <ol>
+                    <li>Heart rate monitor</li>
+                    <li>GPS tracking</li>
+                    <li>Water resistant</li>
+                </ol>
+            </td>
+            <td><b>$89.99</b></td>
+            <td>Low Stock</td>
+            <td><button>Add to Cart</button></td>
+        </tr>
+    </table>
+    <h3>Create New Account</h3>
+    <fieldset>
+        <legend>personal Information</legend>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" required>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" required>
+        <label for="date">Date of Birth</label>
+        <input type="date" name="date" id="date">
+        <label for="">Gender</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="fmale">Female</label>
+        <input type="radio" name="gender" id="fmale">
+    </fieldset>
+    <fieldset>
+        <legend>Account Details</legend>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <label for="phone">Phone Number</label>
+        <input type="number" name="phone" id="phone">
+        <label for="subscribe">Subscribe to Newsletter</label>
+        <input type="checkbox" name="subscribe" id="subscribe">
+    </fieldset>
+    <fieldset>
+        <legend>Shipping Address</legend>
+        <label for="tarea">Street Address</label>
+        <textarea name="tarea" id="tarea" required></textarea>
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" required>
+        <label for="code">Zip Code</label>
+        <input type="number" name="code" id="code" required>
+    </fieldset>
+    <br>
+    <input type="button" value="Create Account">
+    <input type="button" value="Clear Form">
+    <h3>Product Comparision</h3>
+    <table border="1">
+        <tr>
+            <th>Feature</th>
+            <th>Basic Model</th>
+            <th>Pro Model</th>
+            <th>Premium Model</th>
+        </tr>
+        <tr>
+            <td>Battery Life</td>
+            <td>8 hours</td>
+            <td>12 hours</td>
+            <td>24 hours</td>
+        </tr>
+        <tr>
+            <td>Water Resistance</td>
+            <td>IPX4</td>
+            <td>IPX7</td>
+            <td>IP68</td>
+        </tr>
+        <tr>
+            <td>Warranty</td>
+            <td>1 year</td>
+            <td colspan="2">2 years</td>
+        </tr>
+        <tr>
+            <td colspan="4">All prices include VAT</td>
+        </tr>
+
+    </table>
+    <h3>Checkout Process</h3>
+    <fieldset>
+        <legend>Payment Information</legend>
+        <label for="">Card Type</label>
+        <label for="card">Visa</label>
+        <input type="radio" name="card" id="card">
+        <label for="master">MasterCard</label>
+        <input type="radio" name="card" id="card">
+        <label for="card">American Express</label>
+        <input type="radio" name="card" id="card">
+        <br>
+        <label for="num">Card Number</label>
+        <input type="number" name="num" id="num">
+        <label for="date">Expiry Date</label>
+        <input type="date" name="date" id="date">
+    </fieldset>
+    <fieldset>
+        <legend>Order Summary</legend>
+        <table border="1">
+            <tr>
+                <td><b>Item</b></td>
+                <td><b>Quantity</b></td>
+                <td><b>Price</b></td>
+                <td rowspan="3"></td>
+            </tr>
+            <tr>
+                <td><b>Wireless Headphones</b></td>
+                <td><b>2</b></td>
+                <td><b>$299.98</b></td>
+            </tr>
+            <tr>
+                <td><b>Shipping</b></td>
+                <td><b>-</b></td>
+                <td><b>$15.00</b></td>
+            </tr>
+            <tr>
+                <td><b>Total:</b></td>
+                <td colspan="2"><b>$314.98</b></td>
+                <td></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <input type="button" value="Complete Purchase">
+    <h2>Product Video</h2>
+    <video src="video.webm" controls></video>
+    <h3>Product Audio Description</h3>
+    <audio src="mixkit-forest-walk-607.mp3" controls></audio>
+    <h3>Contact Us</h3>
+    <i>Email</i>:<a href="mailto:usmannoor758236@gmail.com">usmannoor758236@gmail.com</a>
+    <br> <br>
+    <i>Phone</i>: <a href="tel:+1234567890">+1234567890</a>
+    <br> <br>
+    <i>Address</i>
+    <address>123 Commerce Street NewYork, NY 10001</address> <br>
+    <b><span>Our location is here</span></b>
+    <br>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.9095832650833!2d67.1981875!3d24.8669375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb331004a2aa071%3A0xf2e132e72edf7754!2sSMIT%20Malir%20Campus!5e0!3m2!1sen!2s!4v1747328137043!5m2!1sen!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br> <br>
+    <h4>Checkout the latest video</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cHBqwj0Ed_I?si=lWEqizeIWLrYlNzB"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <h3>Quick Links</h3>
+    <ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Return Policy</a></li>
+    </ul>
+    <p> © 2023 MegaMart. All rights reserved.</p>
+    <p> Follow us on <a href="#top">Social Media</a></p>
+
+</body>
+
+</html>
